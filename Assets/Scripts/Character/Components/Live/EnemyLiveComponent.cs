@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class EnemyLiveComponent : ILiveComponent
 {
-    // Текущее здоровье
-    private int health = 50;
+    private int health;
 
-    // Живой ли персонаж
+    public EnemyLiveComponent(int health)
+    {
+        this.health = health;
+    }
+
     public bool IsAlive => health > 0;
 
-    // Получить урон
     public void GetDamage(int damage)
     {
         health -= damage;

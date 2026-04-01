@@ -8,19 +8,20 @@ public class PlayerLiveComponent : ILiveComponent
 
     public void GetDamage(int damage)
     {
-        // Не получаем урон если уже мёртвы
-        if (!IsAlive)
-            return;
+        if (!IsAlive) return;
 
         health -= damage;
-
-        // Не даём уйти ниже 0
-        if (health < 0)
-            health = 0;
+        if (health < 0) health = 0;
 
         Debug.Log($"Игрок получил урон {damage}. Осталось жизней {health}");
 
+        // Вызываем событие изменения здоровья
+        GameEvents.HealthChanged(health);
+
         if (!IsAlive)
+        {
             Debug.Log("Игрок погиб!");
+            GameManager.Instance.StopGame();
+        }
     }
 }

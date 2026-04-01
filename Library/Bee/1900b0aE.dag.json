@@ -483,7 +483,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -517,7 +517,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 55603,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -4895,7 +4895,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 67520,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -4929,7 +4929,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 114708,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -6339,7 +6339,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 127337,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -6373,7 +6373,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 196077,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -8003,7 +8003,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 208498,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -8037,7 +8037,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 252240,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9268,7 +9268,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 265366,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -9302,7 +9302,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 306070,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -10447,7 +10447,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 319275,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -10481,7 +10481,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 401674,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -12361,7 +12361,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 414469,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -12395,7 +12395,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 453415,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -13475,7 +13475,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 466224,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -13509,7 +13509,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 505625,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -14599,7 +14599,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 518442,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -14633,7 +14633,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 562117,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -15812,7 +15812,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 575340,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -15846,7 +15846,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 662244,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -17842,7 +17842,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 674993,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -17876,7 +17876,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 718319,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -19037,7 +19037,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 730979,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -19071,7 +19071,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 772437,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -20210,7 +20210,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 785668,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -20244,7 +20244,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 827959,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -21387,7 +21387,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 841230,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -21421,7 +21421,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 882248,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -22542,7 +22542,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 895482,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -22576,7 +22576,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 941269,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -23806,7 +23806,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 954053,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -23840,7 +23840,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 997636,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -25009,7 +25009,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1010306,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -25043,7 +25043,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1050977,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -26192,7 +26192,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1064277,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -26226,7 +26226,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1103783,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -27337,7 +27337,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1116538,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -27371,7 +27371,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1155739,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -28461,7 +28461,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1168617,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -28495,7 +28495,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1206908,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -29557,7 +29557,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1219250,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -29591,7 +29591,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1264223,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -30814,7 +30814,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1277538,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -30848,7 +30848,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1318150,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -31971,7 +31971,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1331461,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -32005,7 +32005,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1376418,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -33270,7 +33270,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1389410,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -33304,7 +33304,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1433439,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -34534,7 +34534,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1446317,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -34568,7 +34568,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1512800,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -36259,7 +36259,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1526082,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -36293,7 +36293,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1621768,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -38235,7 +38235,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1634642,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -38269,7 +38269,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1680169,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -39522,7 +39522,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1693464,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -39556,7 +39556,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1793635,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -41639,7 +41639,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1806941,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -41673,7 +41673,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1897792,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -43567,7 +43567,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1910767,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -43601,7 +43601,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1948760,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -44681,7 +44681,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1961213,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -44715,7 +44715,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2023288,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -46214,7 +46214,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2036857,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -46248,7 +46248,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2079288,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -47400,7 +47400,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2092281,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -47434,7 +47434,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2134445,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -48647,7 +48647,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2148138,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -48681,7 +48681,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2197329,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -49960,7 +49960,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2211012,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -49994,7 +49994,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2251948,
       "PayloadLength": 64,
-      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#2_121_Ді",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Engine#3_121_Ді",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -51169,7 +51169,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 2265708,
       "PayloadLength": 51,
-      "PayloadDebugContentSnippet": "D:\\Engine#2_121_Ділдахм",
+      "PayloadDebugContentSnippet": "D:\\Engine#3_121_Ділдахм",
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
@@ -51185,7 +51185,7 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 2265845,
-      "PayloadLength": 40350,
+      "PayloadLength": 40672,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "InputFlags": [],
@@ -51201,7 +51201,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 2306282,
+      "PayloadOffset": 2306604,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -51508,6 +51508,7 @@
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
         "Assets/Scripts/Character/AIState.cs",
         "Assets/Scripts/Character/Character.cs",
+        "Assets/Scripts/Character/CharacterConfig.cs",
         "Assets/Scripts/Character/CharacterData.cs",
         "Assets/Scripts/Character/Components/Attack/CharacterAttackComponent.cs",
         "Assets/Scripts/Character/Components/Attack/IAttackComponent.cs",
@@ -51521,12 +51522,27 @@
         "Assets/Scripts/Character/Components/Movements/IMovable.cs",
         "Assets/Scripts/Character/EnemyCharacter.cs",
         "Assets/Scripts/Character/PlayerCharacter.cs",
+        "Assets/Scripts/Factory/CharacterFactory.cs",
+        "Assets/Scripts/Factory/CharacterSpawnController.cs",
+        "Assets/Scripts/Game/Constants.cs",
+        "Assets/Scripts/Game/GameEvents.cs",
+        "Assets/Scripts/Game/GameManager.cs",
+        "Assets/Scripts/Game/GameTimer.cs",
+        "Assets/Scripts/Game/UIManager.cs",
         "C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll",
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp"
       ],
       "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -52159,7 +52175,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 2306378,
+      "PayloadOffset": 2306700,
       "PayloadLength": 14277,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -54200,7 +54216,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "Extracting script serialization layouts",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InputSystem.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InputSystem.ForUI.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InputSystem.TestFramework.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InternalAPIEngineBridge.004.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.Multiplayer.Center.Common.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.DocCodeExamples.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.ext.nunit@d8c07649098d\\net40\\unity-custom\\nunit.framework.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.testtools.codecoverage@e4e5058206c0\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.visualscripting@191c0d7e3b69\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\" -s=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.ext.nunit@d8c07649098d\\net40\\unity-custom\" -s=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.testtools.codecoverage@e4e5058206c0\\lib\\ReportGenerator\" -s=\"D:\\Engine#2_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.visualscripting@191c0d7e3b69\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InputSystem.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InputSystem.ForUI.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InputSystem.TestFramework.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.InternalAPIEngineBridge.004.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.Multiplayer.Center.Common.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.DocCodeExamples.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.ext.nunit@d8c07649098d\\net40\\unity-custom\\nunit.framework.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.testtools.codecoverage@e4e5058206c0\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.visualscripting@191c0d7e3b69\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.2f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\ScriptAssemblies\" -s=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.ext.nunit@d8c07649098d\\net40\\unity-custom\" -s=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.testtools.codecoverage@e4e5058206c0\\lib\\ReportGenerator\" -s=\"D:\\Engine#3_121_Ділдахмет_Райымбек\\Library\\PackageCache\\com.unity.visualscripting@191c0d7e3b69\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -54554,6 +54570,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aE.dag.json",
-  "PayloadsFile": "D:/Engine#2_121_Ділдахмет_Райымбек/Library/Bee/1900b0aE.dag.payloads",
+  "PayloadsFile": "D:/Engine#3_121_Ділдахмет_Райымбек/Library/Bee/1900b0aE.dag.payloads",
   "RelativePathToRoot": "../.."
 }
