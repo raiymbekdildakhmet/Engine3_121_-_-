@@ -4,22 +4,40 @@ public class PlayerCharacter : Character
 {
     [SerializeField] private CharacterConfig config;
 
+    // Сохраняем начальную позицию при старте
+    private Vector3 startPosition;
+    private Quaternion startRotation;
+
     protected override void Start()
     {
         base.Start();
+
+        // Запоминаем начальную позицию
+        startPosition = transform.position;
+        startRotation = transform.rotation;
 
         int damage = config != null ? config.damage : 5;
         float cooldown = config != null ? config.attackCooldown : 1f;
 
         LiveComponent = new PlayerLiveComponent();
         AttackComponent = new CharacterAttackComponent(damage, cooldown);
+
+        // Пока используем клавиатуру
+        // Joystick добавим позже отдельно
         InputReader = new PlayerInputReader();
     }
 
     public void ResetHealth()
     {
+        // Восстанавливаем здоровье
         LiveComponent = new PlayerLiveComponent();
         GameEvents.HealthChanged(100);
+
+        // Возвращаем на начальную позицию
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+
+        Debug.Log("Игрок возрождён на стартовой позиции!");
     }
 
     public override void Update()

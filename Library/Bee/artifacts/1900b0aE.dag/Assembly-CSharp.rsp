@@ -429,6 +429,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.2f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Scripts/CameraService/CameraFollow.cs"
 "Assets/Scripts/Character/AIState.cs"
 "Assets/Scripts/Character/Character.cs"
 "Assets/Scripts/Character/CharacterConfig.cs"
@@ -452,6 +453,18 @@
 "Assets/Scripts/Game/GameManager.cs"
 "Assets/Scripts/Game/GameTimer.cs"
 "Assets/Scripts/Game/UIManager.cs"
+"Assets/Scripts/Interface/DefeatWindow.cs"
+"Assets/Scripts/Interface/GameCanvasInitializer.cs"
+"Assets/Scripts/Interface/GameplayWindow.cs"
+"Assets/Scripts/Interface/MainMenuWindow.cs"
+"Assets/Scripts/Interface/OptionsWindow.cs"
+"Assets/Scripts/Interface/SkillData.cs"
+"Assets/Scripts/Interface/SkillItem.cs"
+"Assets/Scripts/Interface/SkillsController.cs"
+"Assets/Scripts/Interface/UpgradeWindow.cs"
+"Assets/Scripts/Interface/VictoryWindow.cs"
+"Assets/Scripts/Interface/Window.cs"
+"Assets/Scripts/Interface/WindowsService.cs"
 -langversion:9.0
 /deterministic
 /optimize+

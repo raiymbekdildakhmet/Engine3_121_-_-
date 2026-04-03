@@ -49,28 +49,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Character\Components\Input\IInputReader.cs" />
+    <Compile Include="Assets\Scripts\Interface\UpgradeWindow.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Live\ILiveComponent.cs" />
+    <Compile Include="Assets\Scripts\Interface\SkillItem.cs" />
     <Compile Include="Assets\Scripts\Character\AIState.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Attack\CharacterAttackComponent.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Movements\IMovable.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Movements\CharacterMovementComponent.cs" />
     <Compile Include="Assets\Scripts\Game\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Interface\MainMenuWindow.cs" />
     <Compile Include="Assets\Scripts\Game\Constants.cs" />
+    <Compile Include="Assets\Scripts\Interface\GameCanvasInitializer.cs" />
     <Compile Include="Assets\Scripts\Character\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\Game\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Interface\WindowsService.cs" />
     <Compile Include="Assets\Scripts\Game\GameEvents.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Live\PlayerLiveComponent.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Input\NpcInputReader.cs" />
+    <Compile Include="Assets\Scripts\Interface\DefeatWindow.cs" />
+    <Compile Include="Assets\Scripts\Interface\GameplayWindow.cs" />
     <Compile Include="Assets\Scripts\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Factory\CharacterSpawnController.cs" />
+    <Compile Include="Assets\Scripts\Interface\OptionsWindow.cs" />
+    <Compile Include="Assets\Scripts\Interface\SkillData.cs" />
     <Compile Include="Assets\Scripts\Game\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Input\PlayerInputReader.cs" />
+    <Compile Include="Assets\Scripts\Interface\SkillsController.cs" />
+    <Compile Include="Assets\Scripts\Interface\Window.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Live\EnemyLiveComponent.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterConfig.cs" />
     <Compile Include="Assets\Scripts\Character\Components\Attack\IAttackComponent.cs" />
     <Compile Include="Assets\Scripts\Factory\CharacterFactory.cs" />
     <Compile Include="Assets\Scripts\Character\PlayerCharacter.cs" />
+    <Compile Include="Assets\Scripts\Interface\VictoryWindow.cs" />
+    <Compile Include="Assets\Scripts\CameraService\CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
