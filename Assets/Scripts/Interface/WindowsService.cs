@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class WindowsService : MonoBehaviour
 {
-    // Массив всех окон — заполняется в Inspector
-    // Перетащи: MainMenuWindow, GameplayCanvas,
-    // OptionsWindow, DefeatWindow, VictoryWindow
     [SerializeField] private Window[] windows;
 
     private Dictionary<Type, Window> windowsDictionary;
 
+    // Текущий попап (Pause, Options, Victory, Defeat, Upgrade)
+    private Window currentWindow;
+
+    // Текущее фоновое окно (MainMenuWindow / GameplayCanvas)
+    private Window currentBackgroundWindow;
+
+    // Стек попапов: Pause → Options → Pause
+    private readonly Stack<Window> windowStack = new Stack<Window>();
+
+    public Window CurrentWindow => currentWindow;
+    public Window CurrentBackgroundWindow => currentBackgroundWindow;
+
     /// <summary>
-    /// Инициализация всех окон.
-    /// Вызывается из GameCanvasInitializer при старте.
+    /// Инициализация всех окон. Вызывается из GameCanvasInitializer.
+    /// Стартовое окно показывает GameCanvasInitializer.
     /// </summary>
     public void Initialize()
     {
@@ -21,28 +30,13 @@ public class WindowsService : MonoBehaviour
 
         foreach (Window window in windows)
         {
-            // Добавляем в словарь по типу
             windowsDictionary.Add(window.GetType(), window);
-
-            // Скрываем сразу — деактивируем GameObject
             window.gameObject.SetActive(false);
-
-            // Инициализируем каждое окно
-            // (подписка на кнопки внутри каждого окна)
             window.Initialize();
-
             Debug.Log("Инициализировано: " + window.GetType().Name);
         }
-
-        // Показываем главное меню при старте
-        ShowWindow<MainMenuWindow>(true);
-        Debug.Log("MainMenuWindow показан!");
     }
 
-    /// <summary>
-    /// Получить окно по типу.
-    /// Пример: GetWindow&lt;MainMenuWindow&gt;()
-    /// </summary>
     public T GetWindow<T>() where T : Window
     {
         if (!windowsDictionary.ContainsKey(typeof(T)))
@@ -50,48 +44,147 @@ public class WindowsService : MonoBehaviour
             Debug.LogError($"Окно {typeof(T).Name} не найдено!");
             return null;
         }
-
         return windowsDictionary[typeof(T)] as T;
     }
 
     /// <summary>
-    /// Показать окно по типу.
-    /// isImmediately = true  → мгновенно без анимации
-    /// isImmediately = false → с анимацией открытия
+    /// Показать окно. Фоновое — заменит фон. Попап — вытеснит текущий попап в стек.
     /// </summary>
     public void ShowWindow<T>(bool isImmediately) where T : Window
     {
         var window = GetWindow<T>();
         if (window == null) return;
 
-        // Активируем GameObject перед показом
+        if (window.IsBackgroundWindow)
+            ShowBackgroundWindow(window, isImmediately);
+        else
+            ShowPopupWindow(window, isImmediately);
+    }
+
+    private void ShowBackgroundWindow(Window window, bool isImmediately)
+    {
+        if (currentBackgroundWindow == window && currentBackgroundWindow.IsOpened) return;
+
+        if (currentBackgroundWindow != null && currentBackgroundWindow.IsOpened)
+        {
+            currentBackgroundWindow.Hide(isImmediately);
+            if (isImmediately) currentBackgroundWindow.gameObject.SetActive(false);
+        }
+
         window.gameObject.SetActive(true);
-
-        // Запускаем Show (с анимацией или без)
         window.Show(isImmediately);
+        currentBackgroundWindow = window;
 
-        Debug.Log("Показано окно: " + typeof(T).Name);
+        UpdateTimeScale();
+        Debug.Log("Показан фон: " + window.GetType().Name);
+    }
+
+    private void ShowPopupWindow(Window window, bool isImmediately)
+    {
+        if (currentWindow == window && currentWindow.IsOpened) return;
+
+        if (currentWindow != null && currentWindow.IsOpened)
+        {
+            currentWindow.Hide(false);
+            windowStack.Push(currentWindow);
+        }
+
+        window.gameObject.SetActive(true);
+        window.Show(isImmediately);
+        currentWindow = window;
+
+        UpdateTimeScale();
+        Debug.Log("Показан попап: " + window.GetType().Name);
     }
 
     /// <summary>
-    /// Скрыть окно по типу.
-    /// isImmediately = true  → мгновенно без анимации
-    /// isImmediately = false → с анимацией закрытия
+    /// Скрыть конкретное окно (без возврата к предыдущему).
     /// </summary>
     public void HideWindow<T>(bool isImmediately) where T : Window
     {
         var window = GetWindow<T>();
         if (window == null) return;
 
-        // Запускаем Hide (с анимацией или без)
         window.Hide(isImmediately);
+        if (isImmediately) window.gameObject.SetActive(false);
 
-        // Если мгновенно — сразу деактивируем GameObject
-        // Если с анимацией — деактивация происходит
-        // в CloseEnd() через Animation Event
-        if (isImmediately)
-            window.gameObject.SetActive(false);
+        if (currentWindow == window) currentWindow = null;
+        if (currentBackgroundWindow == window) currentBackgroundWindow = null;
 
-        Debug.Log("Скрыто окно: " + typeof(T).Name);
+        UpdateTimeScale();
+        Debug.Log("Скрыто: " + typeof(T).Name);
+    }
+
+    /// <summary>
+    /// Закрыть текущий попап. Если в стеке есть предыдущий — вернуться к нему.
+    /// </summary>
+    public void CloseCurrentWindow(bool isImmediately = false)
+    {
+        if (currentWindow == null || !currentWindow.IsOpened) return;
+
+        currentWindow.Hide(isImmediately);
+        if (isImmediately) currentWindow.gameObject.SetActive(false);
+        currentWindow = null;
+
+        if (windowStack.Count > 0)
+        {
+            Window previous = windowStack.Pop();
+            previous.gameObject.SetActive(true);
+            previous.Show(isImmediately);
+            currentWindow = previous;
+        }
+
+        UpdateTimeScale();
+    }
+
+    /// <summary>
+    /// Закрыть все попапы. Фоновое окно остаётся.
+    /// </summary>
+    public void CloseAllPopups(bool isImmediately = true)
+    {
+        if (currentWindow != null && currentWindow.IsOpened)
+        {
+            currentWindow.Hide(isImmediately);
+            if (isImmediately) currentWindow.gameObject.SetActive(false);
+        }
+
+        while (windowStack.Count > 0)
+        {
+            var w = windowStack.Pop();
+            if (w.IsOpened)
+            {
+                w.Hide(true);
+                w.gameObject.SetActive(false);
+            }
+        }
+
+        currentWindow = null;
+        windowStack.Clear();
+        UpdateTimeScale();
+    }
+
+    /// <summary>
+    /// Закрыть всё (включая фон) и снять паузу.
+    /// </summary>
+    public void CloseAllWindows(bool isImmediately = true)
+    {
+        CloseAllPopups(isImmediately);
+
+        if (currentBackgroundWindow != null && currentBackgroundWindow.IsOpened)
+        {
+            currentBackgroundWindow.Hide(isImmediately);
+            if (isImmediately) currentBackgroundWindow.gameObject.SetActive(false);
+            currentBackgroundWindow = null;
+        }
+
+        Time.timeScale = 1f;
+    }
+
+    private void UpdateTimeScale()
+    {
+        if (currentWindow != null && currentWindow.IsOpened && currentWindow.PausesGame)
+            Time.timeScale = 0f;
+        else
+            Time.timeScale = 1f;
     }
 }

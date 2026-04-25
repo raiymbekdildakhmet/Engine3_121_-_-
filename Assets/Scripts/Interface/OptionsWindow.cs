@@ -5,50 +5,60 @@ public class OptionsWindow : Window
 {
     [Header("Переключатели")]
     [SerializeField] private Toggle musicToggle;
-    [SerializeField] private Toggle soundsToggle;
+    [SerializeField] private Toggle soundToggle;
 
     [Header("Кнопки")]
     [SerializeField] private Button exitButton;
 
+    private const string MusicKey = "Settings_Music";
+    private const string SoundKey = "Settings_Sound";
+
     public override void Initialize()
     {
-        musicToggle.isOn = PlayerPrefs.GetInt("Music", 1) == 1;
-        soundsToggle.isOn = PlayerPrefs.GetInt("Sounds", 1) == 1;
+        base.Initialize();
 
-        musicToggle.onValueChanged.AddListener(OnMusicChanged);
-        soundsToggle.onValueChanged.AddListener(OnSoundsChanged);
-        exitButton.onClick.AddListener(OnExitClicked);
+        if (musicToggle != null)
+        {
+            musicToggle.isOn = PlayerPrefs.GetInt(MusicKey, 1) == 1;
+            musicToggle.onValueChanged.AddListener(OnMusicToggleChanged);
+        }
+
+        if (soundToggle != null)
+        {
+            soundToggle.isOn = PlayerPrefs.GetInt(SoundKey, 1) == 1;
+            soundToggle.onValueChanged.AddListener(OnSoundToggleChanged);
+        }
+
+        if (exitButton != null)
+            exitButton.onClick.AddListener(OnExitClicked);
     }
 
-    protected override void OpenEnd()
+    private void OnMusicToggleChanged(bool isOn)
     {
-        base.OpenEnd();
-        exitButton.interactable = true;
-    }
-
-    protected override void CloseStart()
-    {
-        base.CloseStart();
-        exitButton.interactable = false;
-    }
-
-    private void OnMusicChanged(bool value)
-    {
-        PlayerPrefs.SetInt("Music", value ? 1 : 0);
+        PlayerPrefs.SetInt(MusicKey, isOn ? 1 : 0);
         PlayerPrefs.Save();
-        Debug.Log("Музыка: " + (value ? "ВКЛ" : "ВЫКЛ"));
+        AudioListener.pause = !isOn;
     }
 
-    private void OnSoundsChanged(bool value)
+    private void OnSoundToggleChanged(bool isOn)
     {
-        PlayerPrefs.SetInt("Sounds", value ? 1 : 0);
+        PlayerPrefs.SetInt(SoundKey, isOn ? 1 : 0);
         PlayerPrefs.Save();
-        Debug.Log("Звуки: " + (value ? "ВКЛ" : "ВЫКЛ"));
+        AudioListener.volume = isOn ? 1f : 0f;
     }
 
     private void OnExitClicked()
     {
-        // false = с анимацией
-        Hide(false);
+        GameManager.Instance.WindowsService.CloseCurrentWindow(false);
+    }
+
+    private void OnDestroy()
+    {
+        if (musicToggle != null)
+            musicToggle.onValueChanged.RemoveListener(OnMusicToggleChanged);
+        if (soundToggle != null)
+            soundToggle.onValueChanged.RemoveListener(OnSoundToggleChanged);
+        if (exitButton != null)
+            exitButton.onClick.RemoveListener(OnExitClicked);
     }
 }

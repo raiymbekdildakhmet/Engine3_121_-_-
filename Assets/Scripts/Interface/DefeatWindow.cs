@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DefeatWindow : Window
 {
@@ -7,41 +8,51 @@ public class DefeatWindow : Window
     [SerializeField] private Button restartButton;
     [SerializeField] private Button mainMenuButton;
 
+    [Header("Текст")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI killsText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
+
     public override void Initialize()
     {
-        restartButton.onClick.AddListener(OnRestartClicked);
-        mainMenuButton.onClick.AddListener(OnMainMenuClicked);
+        base.Initialize();
+
+        if (restartButton != null)
+            restartButton.onClick.AddListener(OnRestartClicked);
+        if (mainMenuButton != null)
+            mainMenuButton.onClick.AddListener(OnMainMenuClicked);
     }
 
-    protected override void OpenEnd()
+    protected override void OpenStart()
     {
-        base.OpenEnd();
-        // Включаем кнопки после анимации
-        restartButton.interactable = true;
-        mainMenuButton.interactable = true;
-    }
+        base.OpenStart();
 
-    protected override void CloseStart()
-    {
-        base.CloseStart();
-        // Выключаем кнопки во время анимации
-        restartButton.interactable = false;
-        mainMenuButton.interactable = false;
+        if (GameManager.Instance != null)
+        {
+            if (scoreText != null)
+                scoreText.text = "Score: " + GameManager.Instance.Score;
+            if (killsText != null)
+                killsText.text = "Kills: " + GameManager.Instance.EnemiesKilled;
+            if (highScoreText != null)
+                highScoreText.text = "Best: " + GameManager.Instance.HighScore;
+        }
     }
 
     private void OnRestartClicked()
     {
-        // false = с анимацией закрытия
-        Hide(false);
-        GameManager.Instance.WindowsService
-            .ShowWindow<GameplayWindow>(false);
-        GameManager.Instance.StartGame();
+        GameManager.Instance.RestartGame();
     }
 
     private void OnMainMenuClicked()
     {
-        Hide(false);
-        GameManager.Instance.WindowsService
-            .ShowWindow<MainMenuWindow>(false);
+        GameManager.Instance.GoToMainMenu();
+    }
+
+    private void OnDestroy()
+    {
+        if (restartButton != null)
+            restartButton.onClick.RemoveListener(OnRestartClicked);
+        if (mainMenuButton != null)
+            mainMenuButton.onClick.RemoveListener(OnMainMenuClicked);
     }
 }

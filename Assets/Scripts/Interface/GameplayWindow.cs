@@ -4,62 +4,60 @@ using TMPro;
 
 public class GameplayWindow : Window
 {
-    [Header("Здоровье")]
-    [SerializeField] private TMP_Text healthText;
-    [SerializeField] private Slider healthSlider;
-
-    [Header("Опыт")]
+    [Header("Опыт / Уровень")]
     [SerializeField] private Slider experienceSlider;
 
-    [Header("Таймер и монеты")]
+    [Header("Таймер, монеты, киллы")]
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text coinsText;
+    [SerializeField] private TMP_Text enemiesKilledText;
 
-    [Header("Кнопка прокачки")]
+    [Header("Кнопки")]
     [SerializeField] private Button upgradeButton;
+    [SerializeField] private Button pauseButton;
 
     public override void Initialize()
     {
+        base.Initialize();
+
         if (upgradeButton != null)
             upgradeButton.onClick.AddListener(OnUpgradeClicked);
+        if (pauseButton != null)
+            pauseButton.onClick.AddListener(OnPauseClicked);
     }
 
     protected override void OpenStart()
     {
         base.OpenStart();
-
-        GameEvents.OnHealthChanged += UpdateHealth;
-        GameEvents.OnScoreChanged += UpdateScore;
-
-        UpdateHealth(100);
         UpdateScore(0);
     }
 
-    protected override void CloseStart()
+    private void OnEnable()
     {
-        base.CloseStart();
-
-        GameEvents.OnHealthChanged -= UpdateHealth;
-        GameEvents.OnScoreChanged -= UpdateScore;
+        GameEvents.OnScoreChanged += UpdateScore;
     }
 
-    private void UpdateHealth(int health)
+    private void OnDisable()
     {
-        healthText.text = health + " / 100";
-        healthSlider.maxValue = 100;
-        healthSlider.value = health;
+        GameEvents.OnScoreChanged -= UpdateScore;
     }
 
     private void UpdateScore(int score)
     {
-        coinsText.text = score.ToString();
+        if (coinsText != null)
+            coinsText.text = score.ToString();
+        if (enemiesKilledText != null && GameManager.Instance != null)
+            enemiesKilledText.text = GameManager.Instance.EnemiesKilled.ToString();
     }
 
     private void OnUpgradeClicked()
     {
-        GameManager.Instance.WindowsService
-            .ShowWindow<UpgradeWindow>(false);
-        Debug.Log("Открыто окно прокачки!");
+        GameManager.Instance.OpenUpgrade();
+    }
+
+    private void OnPauseClicked()
+    {
+        GameManager.Instance.PauseGame();
     }
 
     private void Update()
@@ -68,13 +66,18 @@ public class GameplayWindow : Window
         if (GameManager.Instance.gameTimer == null) return;
         if (!IsOpened) return;
 
-        float gameSeconds = GameManager.Instance
-            .gameTimer.ElapsedTime;
-
+        float gameSeconds = GameManager.Instance.gameTimer.ElapsedTime;
         int minutes = (int)(gameSeconds / 60);
         int seconds = (int)(gameSeconds % 60);
+        if (timerText != null)
+            timerText.text = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    }
 
-        timerText.text = minutes + ":"
-            + (seconds < 10 ? "0" : "") + seconds;
+    private void OnDestroy()
+    {
+        if (upgradeButton != null)
+            upgradeButton.onClick.RemoveListener(OnUpgradeClicked);
+        if (pauseButton != null)
+            pauseButton.onClick.RemoveListener(OnPauseClicked);
     }
 }

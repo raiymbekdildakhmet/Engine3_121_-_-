@@ -4,48 +4,55 @@ using TMPro;
 
 public class VictoryWindow : Window
 {
-    [Header("Тексты")]
-    [SerializeField] private TMP_Text scoreCountText;
-    [SerializeField] private TMP_Text newRecordText;
-
     [Header("Кнопки")]
-    [SerializeField] private Button continueButton;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private Button mainMenuButton;
+
+    [Header("Текст")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI killsText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
 
     public override void Initialize()
     {
-        continueButton.onClick.AddListener(OnContinueClicked);
+        base.Initialize();
+
+        if (restartButton != null)
+            restartButton.onClick.AddListener(OnRestartClicked);
+        if (mainMenuButton != null)
+            mainMenuButton.onClick.AddListener(OnMainMenuClicked);
     }
 
     protected override void OpenStart()
     {
         base.OpenStart();
 
-        int score = GameManager.Instance.Score;
-        int highScore = GameManager.Instance.HighScore;
-
-        scoreCountText.text = score.ToString();
-
-        bool isNewRecord = score >= highScore && score > 0;
-        newRecordText.gameObject.SetActive(isNewRecord);
+        if (GameManager.Instance != null)
+        {
+            if (scoreText != null)
+                scoreText.text = "Score: " + GameManager.Instance.Score;
+            if (killsText != null)
+                killsText.text = "Kills: " + GameManager.Instance.EnemiesKilled;
+            if (highScoreText != null)
+                highScoreText.text = "Best: " + GameManager.Instance.HighScore;
+        }
     }
 
-    protected override void OpenEnd()
+    private void OnRestartClicked()
     {
-        base.OpenEnd();
-        continueButton.interactable = true;
+        GameManager.Instance.RestartGame();
     }
 
-    protected override void CloseStart()
+    private void OnMainMenuClicked()
     {
-        base.CloseStart();
-        continueButton.interactable = false;
+        GameManager.Instance.GoToMainMenu();
     }
 
-    private void OnContinueClicked()
+    private void OnDestroy()
     {
-        // false = с анимацией
-        Hide(false);
-        GameManager.Instance.WindowsService
-            .ShowWindow<MainMenuWindow>(false);
+        if (restartButton != null)
+            restartButton.onClick.RemoveListener(OnRestartClicked);
+        if (mainMenuButton != null)
+            mainMenuButton.onClick.RemoveListener(OnMainMenuClicked);
     }
 }

@@ -12,6 +12,16 @@ public abstract class Window : MonoBehaviour
     [SerializeField] protected string closeAnimationName = "Close";
     [SerializeField] protected string hiddenAnimationName = "Hidden";
 
+    [Space(10)]
+    [Tooltip("Ставит ли это окно игру на паузу (Time.timeScale = 0)")]
+    [SerializeField] private bool pausesGame = true;
+
+    [Tooltip("Фоновое окно (например GameplayCanvas / MainMenu) — не вытесняется попапами и не уходит в стек")]
+    [SerializeField] private bool isBackgroundWindow = false;
+
+    public string WindowName => windowName;
+    public bool PausesGame => pausesGame;
+    public bool IsBackgroundWindow => isBackgroundWindow;
     public bool IsOpened { get; protected set; } = false;
 
     protected Animator WindowAnimator
@@ -24,13 +34,17 @@ public abstract class Window : MonoBehaviour
         }
     }
 
-    public virtual void Initialize() { }
+    public virtual void Initialize()
+    {
+        // Чтобы анимации работали при Time.timeScale = 0
+        if (WindowAnimator != null)
+            WindowAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
+    }
 
     public void Show(bool isImmediately)
     {
         OpenStart();
 
-        // Играем анимацию только если есть Controller
         if (WindowAnimator != null &&
             WindowAnimator.runtimeAnimatorController != null)
         {
@@ -45,9 +59,10 @@ public abstract class Window : MonoBehaviour
 
     public void Hide(bool isImmediately)
     {
+        if (!IsOpened && !gameObject.activeSelf) return;
+
         CloseStart();
 
-        // Играем анимацию только если есть Controller
         if (WindowAnimator != null &&
             WindowAnimator.runtimeAnimatorController != null)
         {
@@ -66,14 +81,15 @@ public abstract class Window : MonoBehaviour
         IsOpened = true;
     }
 
-    // Вызывается через Animation Event
-    // на последнем кадре Open анимации
+    // Вызывается через Animation Event на последнем кадре Open-анимации
     protected virtual void OpenEnd() { }
 
-    protected virtual void CloseStart() { }
+    protected virtual void CloseStart()
+    {
+        IsOpened = false;
+    }
 
-    // Вызывается через Animation Event
-    // на последнем кадре Close анимации
+    // Вызывается через Animation Event на последнем кадре Close-анимации
     protected virtual void CloseEnd()
     {
         this.gameObject.SetActive(false);

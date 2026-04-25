@@ -1,46 +1,49 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenuWindow : Window
 {
     [Header("Кнопки")]
-    [SerializeField] private Button startGameButton;
+    [SerializeField] private Button startButton;
     [SerializeField] private Button optionsButton;
+
+    [Header("Опционально")]
+    [SerializeField] private TextMeshProUGUI highScoreText;
 
     public override void Initialize()
     {
-        startGameButton.onClick.AddListener(OnStartGameClicked);
-        optionsButton.onClick.AddListener(OnOptionsClicked);
+        base.Initialize();
+
+        if (startButton != null)
+            startButton.onClick.AddListener(OnStartClicked);
+        if (optionsButton != null)
+            optionsButton.onClick.AddListener(OnOptionsClicked);
     }
 
-    protected override void OpenEnd()
+    protected override void OpenStart()
     {
-        base.OpenEnd();
-        // Включаем кнопки после анимации открытия
-        startGameButton.interactable = true;
-        optionsButton.interactable = true;
+        base.OpenStart();
+
+        if (highScoreText != null && GameManager.Instance != null)
+            highScoreText.text = "Best: " + GameManager.Instance.HighScore;
     }
 
-    protected override void CloseStart()
+    private void OnStartClicked()
     {
-        base.CloseStart();
-        // Выключаем кнопки во время анимации закрытия
-        startGameButton.interactable = false;
-        optionsButton.interactable = false;
-    }
-
-    private void OnStartGameClicked()
-    {
-        // false = с анимацией закрытия
-        Hide(false);
-        GameManager.Instance.WindowsService
-            .ShowWindow<GameplayWindow>(false);
         GameManager.Instance.StartGame();
     }
 
     private void OnOptionsClicked()
     {
-        GameManager.Instance.WindowsService
-            .ShowWindow<OptionsWindow>(false);
+        GameManager.Instance.OpenOptions();
+    }
+
+    private void OnDestroy()
+    {
+        if (startButton != null)
+            startButton.onClick.RemoveListener(OnStartClicked);
+        if (optionsButton != null)
+            optionsButton.onClick.RemoveListener(OnOptionsClicked);
     }
 }
